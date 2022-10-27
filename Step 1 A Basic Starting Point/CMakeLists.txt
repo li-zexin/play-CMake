@@ -1,10 +1,19 @@
-# Any project's top most CMakeLists.txt must start by specifying a minimum CMake version using the cmake_minimum_required() command. This establishes policy settings and ensures that the following CMake functions are run with a compatible version of CMake.
-cmake_minimum_required(3.19.5)
+# TODO 1: Set the minimum required version of CMake to be 3.10
+cmake_minimum_required(3.10)
 
-# To start a project, we use the project() command to set the project name. 
-project(play-CMake c)
+# TODO 2: Create a project named Tutorial
+project(Tutorial)
 
-# the add_executable() command tells CMake to create an executable using the specified source code files.
-add_executable(play-CMake main.c)
+# TODO 7: Set the project version number as 1.0 in the above project command
 
+# TODO 6: Set the variable CMAKE_CXX_STANDARD to 11
+#         and the variable CMAKE_CXX_STANDARD_REQUIRED to True
 
+# TODO 8: Use configure_file to configure and copy TutorialConfig.h.in to
+#         TutorialConfig.h
+
+# TODO 3: Add an executable called Tutorial to the project
+# Hint: Be sure to specify the source file as tutorial.cxx
+add_executable(Tutorial tutorial.cxx)
+
+# TODO 9: Use target_include_directories to include ${PROJECT_BINARY_DIR}
