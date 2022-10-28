@@ -7,7 +7,8 @@
 
 // TODO 11: Only include MathFunctions if MY_MATH is defined
 
-// TODO 5: Include MathFunctions.h
+// 5: Include MathFunctions.h
+#include "MathFunctions.h"
 
 int main(int argc, char* argv[])
 {
@@ -24,10 +25,10 @@ int main(int argc, char* argv[])
 
   // TODO 12: Use mysqrt if MY_MATH is defined and sqrt otherwise
 
-  // TODO 6: Replace sqrt with mysqrt
+  // 6: Replace sqrt with mysqrt
 
   // calculate square root
-  const double outputValue = sqrt(inputValue);
+  const double outputValue = mysqrt(inputValue);
   std::cout << "The square root of " << inputValue << " is " << outputValue
             << std::endl;
   return 0;
